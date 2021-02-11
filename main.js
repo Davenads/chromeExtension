@@ -80,8 +80,8 @@ document.addEventListener("DOMContentLoaded", () => {
       chrome.windows.create({
         url: "walk.html",
         type: "popup",
-        height: 500,
-        width: 400,
+        height: 450,
+        width: 425,
       });
     }
     if (alarm.name === "wat") {

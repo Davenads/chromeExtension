@@ -7,7 +7,7 @@ chrome.runtime.onStartup.addListener(function () {
   chrome.windows.create({
     url: "index.html",
     type: "popup",
-    height: 500,
+    height: 600,
     width: 400,
   });
 
