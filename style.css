@@ -1,5 +1,5 @@
 * {
-  overflow-x: hidden;
+  overflow: hidden;
   font-weight: bold;
   font-family: fantasy;
 }
@@ -7,15 +7,17 @@
 body {
   background: url("images/home.jpg") no-repeat center center fixed;
   background-position: left top;
-  height: 100vh;
-  width: 100vw;
+  height: 500px;
+  width: 500px;
   color: rgb(255, 166, 0);
-  text-shadow: 0 0 15px #000000, 0 0 5px #000000;
+  text-shadow: 0 0 10px #000000, 0 0 5px #000000;
+  overflow: hidden;
   padding-bottom: 50px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: -5px;
 }
 
 button {
@@ -24,8 +26,17 @@ button {
   border: none;
   margin: 10px;
   background-color: rgb(245, 182, 99);
+  /* background-color: rgb(75, 150, 201); */
   font-size: 16px;
+  /* text-shadow: 0 0 2px #000000, 0 0 5px #000000; */
   box-shadow: 0 0 2px #000000, 0 0 15px #000000;
+  /* color: rgb(255, 166, 0); */
+}
+
+.active {
+  background-color: rgb(75, 150, 201);
+  color: rgb(255, 166, 0);
+  text-shadow: 0 0 2px #000000, 0 0 5px #000000;
 }
 
 button:hover {
@@ -35,4 +46,15 @@ button:hover {
 
 button:focus {
   outline: none;
+}
+
+#clear {
+  margin: 25px;
+  padding: 8px 30px 1px 30px;
+  background-color: salmon;
+}
+
+#clear:hover {
+  margin: 25px;
+  background-color: red;
 }
